@@ -16,11 +16,7 @@ const NotesSchema = new mongoose.Schema(
 			ref: 'NoteGroup',
 			required: false,
 		},
-		// tags: {
-		// 	type: Array,
-		// 	default: [],
-		// },
-		// imageUrl: String,
+
 		user: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',

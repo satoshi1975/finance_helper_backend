@@ -1,6 +1,5 @@
-// const e = require('express')
 import { noteCreateValidator } from '../validations/notes.js'
-// import app from '../app.js'
+
 import { noteController, noteGroupController } from '../controllers/index.js'
 import express from 'express'
 import { checkAuth, handleValidationErrors } from '../utils/index.js'

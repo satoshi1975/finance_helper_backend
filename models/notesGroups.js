@@ -6,12 +6,7 @@ const NotesGroupSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		// note: {
-		// 	// type: mongoose.Schema.Types.ObjectId,
-		// 	// ref: 'Note',
-		// 	type: String,
-		// 	required: true,
-		// },
+
 		user: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'User',

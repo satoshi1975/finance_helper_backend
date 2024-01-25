@@ -1,6 +1,4 @@
 import { registerValidator, loginValidator } from '../validations/auth.js'
-
-// import app from '../app.js'
 import { userController } from '../controllers/index.js'
 import express from 'express'
 import { checkAuth, handleValidationErrors } from '../utils/index.js'

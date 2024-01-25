@@ -2,11 +2,6 @@ import jwt from 'jsonwebtoken'
 import bcrypt from 'bcrypt'
 
 import UserModel from '../models/users.js'
-// import express from 'express'
-// import { registerValidator } from '../validations/auth.js'
-// import mongoose from 'mongoose'
-
-// import checkAuth from '../utils/checkAuth.js'
 
 export const register = async (req, res) => {
 	try {

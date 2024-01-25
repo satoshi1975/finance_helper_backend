@@ -15,9 +15,8 @@ export const update = async (req, res) => {
 				title: req.body.title,
 				text: req.body.text,
 				group: req.body.group,
-				// imageUrl: req.body.imageUrl,
+
 				user: req.userId,
-				// tags: req.body.tags,
 			}
 		)
 		res.json({ success: true })
@@ -59,7 +58,7 @@ export const getOne = async (req, res) => {
 		const noteID = req.params.id
 		const note = await NoteModel.findOne({ _id: noteID })
 			.populate('user')
-			// .populate('group')
+
 			.exec()
 		if (!note) {
 			return res.status(404).json({
@@ -131,7 +130,7 @@ export const create = async (req, res) => {
 			title: req.body.title,
 			text: req.body.text,
 			imageUrl: req.bodyimageUrl,
-			// tags: req.body.tags,
+
 			user: req.userId,
 		})
 		const note = await doc.save()

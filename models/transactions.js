@@ -4,12 +4,10 @@ const TransactionsSchema = new mongoose.Schema(
 	{
 		title: {
 			type: String,
-			// required: true,
 		},
 		amount: {
 			type: Number,
 			required: true,
-			// unique: true,
 		},
 		time: {
 			type: Date,
